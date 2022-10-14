@@ -11,13 +11,17 @@
 x = int(input('Enter X: '))
 y = int(input('Enter Y: '))
 
-if x > 0 and y > 0:
+if x > 0 < y:
     print('1 quarter.')
-elif x < 0 and y > 0:
+elif x < 0 < y:
     print('2 quarter.')
-elif x < 0 and y < 0:
+elif x < 0 > y:
     print('3 quarter.')
-elif x > 0 and y < 0:
+elif x > 0 > y:
     print('4 quarter.')
+elif x == 0 != y:
+    print('The point is on the ordinate axis.')
+elif y == 0 != x:
+    print('The point is on the abscissa axis.')
 else:
     print('Origin!')
