@@ -18,3 +18,17 @@ for i in range(1, len(num_lst), 2):
     nums_odd_indexes.append(num_lst[i])
     summ += num_lst[i]
 print(f'{num_lst} -> in odd positions elements = {nums_odd_indexes}, answer: {summ}')
+
+
+# Второй вариант
+
+from random import randint
+
+
+num = int(input("Введите количество элементов: "))
+num_list = [randint(-num, num) for _ in range(num)]
+num_sum = sum(num_list[1::2])
+print(f"Исходный список: {num_list}\n"
+      f"Элементы на нечётных позициях: {num_list[1::2]}\n"
+      f"Их сумма: {num_sum}")
+      
