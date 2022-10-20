@@ -12,14 +12,15 @@ for i in range(size_lst):
     fill_lst = float(input(f'Enter {i + 1} integer elements of the list with index {i}: '))
     num_lst.append(fill_lst)
 
-min_fract = (num_lst[0] - int(num_lst[0]))
-max_fract = (num_lst[1] - int(num_lst[1]))
+result_num_lst = []
 for i in range(len(num_lst)):
-    if (num_lst[i] - int(num_lst[i])) > max_fract:
-        max_fract = num_lst[i]
-    elif (num_lst[i] - int(num_lst[i])) < min_fract:
-        min_fract = num_lst[i]
-print(num_lst, '=>', round((max_fract - int(max_fract)) - (min_fract - int(min_fract)), 2))
+    n = num_lst[i] % 1
+    if n != 0:
+        result_num_lst.append(n)
+
+maxb = max(result_num_lst)
+minb = min(result_num_lst)
+print(num_lst, '=>', round((maxb - minb), 2))
 
 
 # Второй вариант

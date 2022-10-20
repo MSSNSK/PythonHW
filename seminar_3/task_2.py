@@ -15,11 +15,7 @@ for i in range(size_lst):
 
 mult = []
 for i in range((size_lst + 1) // 2):
-    if num_lst[i] != num_lst[-i - 1]: 
-        mult.append(num_lst[i] * num_lst[-i - 1])
-    if num_lst[i] == num_lst[-i - 1]:
-        mult.append(num_lst[i] * num_lst[i])
-        break
+    mult.append(num_lst[i] * num_lst[-i - 1])
 print(f'{num_lst} => {mult}')
 
 
